@@ -12,6 +12,7 @@ public class MultiplicationTable {
                 System.out.println("Stop");
             }else if( number < 0 || number > 9){
                 System.out.println("other input number:");
+                continue;
             } else {
                 for ( int i = 1; i < 10 ; i++) {
                     System.out.println(number + "*" + i + "=" + number*i);
@@ -20,7 +21,10 @@ public class MultiplicationTable {
                 String checkValue = sc.next();
                 check = checkValue;
             }
-            if (check.equals("n")|| check.equals("N")){
+            if (check.equals("y") || check.equals("Y")){
+                continue;
+            }
+            else {
                 number = 0;
                 System.out.println("stop");
             }
