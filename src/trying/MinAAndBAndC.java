@@ -1,3 +1,5 @@
+package trying;
+
 import java.util.Scanner;
 
 public class MinAAndBAndC {
