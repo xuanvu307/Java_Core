@@ -1,8 +1,8 @@
-package Lesson3;
+package lesson3;
 
 import java.util.Scanner;
 
-public class Ex3 {
+public class Branching3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Mời bạn nhập số điện:");

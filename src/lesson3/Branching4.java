@@ -1,8 +1,8 @@
-package Lesson3;
+package lesson3;
 
 import java.util.Scanner;
 
-public class Ex4 {
+public class Branching4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("mời bạn nhập hãng xe cần xem");

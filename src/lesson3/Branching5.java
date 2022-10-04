@@ -1,8 +1,8 @@
-package Lesson3;
+package lesson3;
 
 import java.util.Scanner;
 
-public class Ex5 {
+public class Branching5 {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("mời bạn nhập vào 2 số a va b:");

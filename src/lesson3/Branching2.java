@@ -1,8 +1,8 @@
-package Lesson3;
+package lesson3;
 
 import java.util.Scanner;
 
-public class Ex2 {
+public class Branching2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double a, b, c;
