@@ -1,11 +1,12 @@
-package homework;
+package homeWork;
+
 // Bài tập kiểm tra chuỗi
 public class ExString1 {
     public static void main(String[] args) {
         String str = "Hello every one";              // Kiểm tra chuỗi "Hello every one"
         int sumStrE = 0;
         for (int i = 0; i < str.length(); i++) {     //Vì chuỗi có độ dài bắt đầu từ 0 và kết thúc tại length -1
-            if (str.charAt(i) == 'e') {
+            if (str.charAt(i)=='e') {
                 sumStrE += 1 ;
             }
         }

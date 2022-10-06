@@ -1,4 +1,4 @@
-package trying;
+package ifElse;
 
 import java.util.Scanner;
 
