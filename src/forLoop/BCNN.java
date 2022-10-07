@@ -9,9 +9,10 @@ public class BCNN {
         int a = sc.nextInt();
         System.out.println("b");
         int b = sc.nextInt();
-        for (int i =1; i<= Math.min(a,b); i++){
-            if (a%i ==0 && b%i == 0) {
+        for (int i = Math.max(a,b); i<= (a*b); i++){
+            if (i%a ==0 && i%b == 0) {
                 System.out.println(i);
+                break;
             }
         }
     }

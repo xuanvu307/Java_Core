@@ -46,7 +46,5 @@ public class UCLN_BCNN {
 
         }
 
-        //BCNN của a và b là tích ab/ ucll
-
     }
 }
