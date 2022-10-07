@@ -1,4 +1,4 @@
-package homeWork;
+package homework;
 
 // Bài tập kiểm tra chuỗi
 public class ExString1 {

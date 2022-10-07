@@ -1,4 +1,4 @@
-package homeWork;
+package homework;
 //Bài tập bảng cửu chương
 import java.util.Scanner;
 

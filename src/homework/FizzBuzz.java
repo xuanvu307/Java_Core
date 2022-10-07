@@ -1,4 +1,4 @@
-package homeWork;
+package homework;
 
 public class FizzBuzz {
     public static void main(String[] args) {
