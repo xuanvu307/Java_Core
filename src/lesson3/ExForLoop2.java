@@ -3,9 +3,11 @@ package lesson3;
 import java.util.Scanner;
 
 public class ExForLoop2 {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int sum = 0;
+
         while (true){
             System.out.println("input number");
             int number = sc.nextInt();      // nhập vào 1 số nguyên bất kỳ
