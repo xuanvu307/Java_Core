@@ -74,33 +74,13 @@ public class ManagerBook{
 
     @Override
     public String toString() {
-        return "ManagerBook{" +
-                "idBook=" + idBook +
-                ", nameBook='" + nameBook + '\'' +
-                ", authorBook='" + authorBook + '\'' +
-                ", categoryBook='" + categoryBook + '\'' +
-                ", companyBook='" + companyBook + '\'' +
-                ", yearPublishBook=" + yearPublishBook +
-                '}';
+        return "id book = " + idBook +
+                ", name book = " + nameBook  +
+                ", author Book = " + authorBook +
+                ", category Book = " + categoryBook  +
+                ", company Book = " + companyBook  +
+                ", year Publish Book = " + yearPublishBook ;
     }
 
-//    public String searchByName(){
-//        System.out.println("moi ban nhap sach can tim");
-//        String search = sc.nextLine();
-//        while (true){
-//            if (search.equals(nameBook)){
-//                System.out.println(idBook + nameBook + authorBook);
-//                return nameBook;
-//            } else {
-//                System.out.println("no");
-//                return nameBook;
-//            }
-//        }
-//    }
 
-
-
-    public void display(){
-
-    }
 }
