@@ -21,6 +21,7 @@ public class ManagerBook{
         this.companyBook = companyBook;
         this.yearPublishBook = yearPublishBook;
     }
+//    __________begin setter and getter____________
 
     public int getIdBook() {
         return idBook;
@@ -70,7 +71,10 @@ public class ManagerBook{
         this.yearPublishBook = yearPublishBook;
     }
 
+
+    //________________end getter and setter_______________________
     Scanner sc = new Scanner(System.in);
+
 
     @Override
     public String toString() {

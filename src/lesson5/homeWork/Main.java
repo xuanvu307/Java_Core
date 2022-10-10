@@ -9,12 +9,20 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         ManagerBook managerBook = new ManagerBook();
 
+        // Khởi tạo các giá trị
+
         ManagerBook maths = new ManagerBook(1, "maths", "vn", "learn", "BGD", 2012);
         ManagerBook music = new ManagerBook(2, "music", "vn", "refer", "BGD", 2019);
         ManagerBook english = new ManagerBook(3, "english", "vn", "learn", "BGD", 2016);
         ManagerBook geography = new ManagerBook(4, "geography", "vn", "refer", "BGD", 2021);
         ManagerBook history = new ManagerBook(5, "history", "vn", "learn", "BGD", 2022);
 
+        /* chạy chương trình
+        1 tìm kiếm theo tên
+        2 tìm kiếm theo thể loại
+        3 in sách xuất bản 2022
+        4 thoát
+         */
         ManagerBook[] arrayBook = {maths, music, english, geography, history};
         System.out.println("choose number 1, 2, 3 or 4 ");
         System.out.println("1. search book by name");
