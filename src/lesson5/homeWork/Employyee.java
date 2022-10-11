@@ -7,10 +7,8 @@ import java.util.Scanner;
 public class Employyee {
     private String id;
     private String name;
-    private LocalDate birthday;
+    private String birthday;
     private double salary;
-
-
     public enum gender {
         MALE, FEMALE
     }
@@ -18,7 +16,7 @@ public class Employyee {
     public Employyee() {
     }
 
-    public Employyee(String id, String name, LocalDate birthday, double salary) {
+    public Employyee(String id, String name, String birthday, double salary) {
         this.id = id;
         this.name = name;
         this.birthday = birthday;
@@ -44,11 +42,11 @@ public class Employyee {
         this.name = name;
     }
 
-    public LocalDate getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(LocalDate birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 
@@ -79,13 +77,17 @@ public class Employyee {
         System.out.println("input name");
         name = sc.nextLine();
         System.out.println("inut bỉhdat");
-        String lc = sc.nextLine();
-        birthday = LocalDate.parse(lc, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        birthday = sc.nextLine();
         System.out.println("input salary");
         salary = sc.nextDouble();
         System.out.println("input gander");
         gender male = gender.MALE;
         gender female = gender.FEMALE;
+    }
+
+    public LocalDate convertDay(){
+        LocalDate birthdayConvert = LocalDate.parse(birthday, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        return birthdayConvert;
     }
 
 }
