@@ -9,11 +9,18 @@ public class Employyee {
     private String name;
     private String birthday;
     private double salary;
-    public enum gender {
-        MALE, FEMALE
-    }
+    private Utils.GENDER gender;
+
 
     public Employyee() {
+    }
+
+    public Employyee(String id, String name, String birthday, double salary, Utils.GENDER gender) {
+        this.id = id;
+        this.name = name;
+        this.birthday = birthday;
+        this.salary = salary;
+        this.gender = gender;
     }
 
     public Employyee(String id, String name, String birthday, double salary) {
@@ -58,15 +65,26 @@ public class Employyee {
         this.salary = salary;
     }
 
+    public Utils.GENDER getGender() {
+        return gender;
+    }
+
+    public void setGender(Utils.GENDER gender) {
+        this.gender = gender;
+    }
+
     //_________________end geter and setter____________
 
 
     @Override
     public String toString() {
-        return "id = " + id +
-                ", name = " + name  +
-                ", birthday = " + birthday +
-                ", salary = " + salary;
+        return "Employyee{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", birthday='" + birthday + '\'' +
+                ", salary=" + salary +
+                ", gender=" + gender +
+                '}';
     }
 
     Scanner sc = new Scanner(System.in);
@@ -81,8 +99,6 @@ public class Employyee {
         System.out.println("input salary");
         salary = sc.nextDouble();
         System.out.println("input gander");
-        gender male = gender.MALE;
-        gender female = gender.FEMALE;
     }
 
     public LocalDate convertDay(){
