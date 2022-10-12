@@ -3,10 +3,7 @@ package lesson5.homeWork;
 // Bài tập quản lý nhân viên
 
 import java.time.LocalDate;
-import java.time.Month;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Locale;
+
 import java.util.Scanner;
 
 public class Main2 {
@@ -103,7 +100,9 @@ public class Main2 {
                 int checkValue = sc.nextInt();
                 for (int i = 0; i <arrayEmployees.length; i++){
                     if (checkValue == arrayEmployees[i].convertDay().getMonthValue()){
-                        System.out.println(arrayEmployees[i].getName()+arrayEmployees[i].convertDay());
+                        sum +=1;
+                        System.out.println(arrayEmployees[i].getName()+" --- "+arrayEmployees[i].convertDay());
+
                     }
                 }
                 if (sum==0) {
