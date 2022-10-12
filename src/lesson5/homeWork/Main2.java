@@ -19,10 +19,10 @@ public class Main2 {
         //Danh sách nhân viên và mảng gồm các nhân viên
 
         Employyee nguyenVanA = new Employyee("NV01","Nguyen Van A", "10/11/1999",1000, Utils.GENDER.MALE);
-        Employyee tranThiB = new Employyee("NV02","Tran Thi B", "20/10/1980",1230, Utils.GENDER.FEMALE);
+        Employyee tranThiB = new Employyee("NV02","Tran Thi B", "20/10/1985",1230, Utils.GENDER.FEMALE);
         Employyee hoangVanC = new Employyee("NV03","Hoang Van C", "02/01/2005",890, Utils.GENDER.MALE);
         Employyee nguyenThiD = new Employyee("NV04","Nguyen Thi D", "16/02/2000",1504, Utils.GENDER.FEMALE);
-        Employyee leThiD = new Employyee("NV05","Le Thi D", "10/09/1990",1300, Utils.GENDER.FEMALE);
+        Employyee leThiD = new Employyee("NV05","Le Thi D", "10/09/1991",1300, Utils.GENDER.FEMALE);
 
         Employyee [] arrayEmployees = {nguyenVanA,tranThiB,hoangVanC,nguyenThiD,leThiD};
 
@@ -39,10 +39,10 @@ public class Main2 {
          */
         System.out.println("choose number.....");
         System.out.println("1...search by name or id");
-        System.out.println("2...");
-        System.out.println("3...");
-        System.out.println("4....");
-        System.out.println("5...");
+        System.out.println("2...employee male and female");
+        System.out.println("3...employee over 30 years old");
+        System.out.println("4...search birthday employee");
+        System.out.println("5...high salary employee");
         System.out.println("6.exit");
         int chooseNumber = sc.nextInt();
         sc.nextLine();
@@ -53,17 +53,18 @@ public class Main2 {
                 sum = 0;
                 System.out.println("enter name or id : ");
                 String search = sc.nextLine();
+                System.out.println("result:");
                 for (int i = 0; i < arrayEmployees.length; i++){
-                    if (arrayEmployees[i].getId().equalsIgnoreCase(search)
+                    if (arrayEmployees[i].getId().equals(search)
                             || arrayEmployees[i].getName().toLowerCase().contains(search.toLowerCase())
                             || search.toLowerCase().contains(arrayEmployees[i].getName().toLowerCase())) {
 
-                        System.out.println("........." + arrayEmployees[i].getName());
                         sum += 1;
+                        System.out.println(sum + ": " +arrayEmployees[i].idAndName());
                     }
                 }
                 if (sum == 0) {
-                    System.out.println("no");
+                    System.out.println("no results returned");
                 }
                 break;
 
@@ -77,20 +78,22 @@ public class Main2 {
                         sumFemale +=1;
                     }
                 }
-                System.out.println("Male " +sumMale);
-                System.out.println("female " +sumFemale);
+                System.out.println("employee male = " +sumMale);
+                System.out.println("employee female = " +sumFemale);
                 break;
 
             case 3:
                 sum = 0;
+                System.out.println("employee over 30 years old: ");
                 for (int i = 0; i <arrayEmployees.length; i++) {
                     int differenceYears = LocalDate.now().getYear() - arrayEmployees[i].convertDay().getYear();
                     if (differenceYears > 30) {
-                        System.out.println(arrayEmployees[i].getName()+" --- age: " +differenceYears);
+                        sum += 1;
+                        System.out.println(sum+ ": " +arrayEmployees[i].getName()+  " --- age: " +differenceYears);
                     }
                 }
                 if (sum == 0) {
-                    System.out.println("no");
+                    System.out.println("no employee over 30 years old");
                 }
                 break;
 
@@ -104,12 +107,13 @@ public class Main2 {
                     }
                 }
                 if (sum==0) {
-                    System.out.println("no" +checkValue);
+                    System.out.println("no birthday month " +checkValue);
                 }
                 break;
 
             case 5:
                 Employyee min = arrayEmployees[0];
+                System.out.println("high salary employee");
                 for (int i = 0; i < arrayEmployees.length; i++){
                     for (int j = i+1; j <arrayEmployees.length; j++){
                         if (arrayEmployees[i].getSalary()<arrayEmployees[j].getSalary()){
@@ -120,7 +124,7 @@ public class Main2 {
                     }
                 }
                 for (int i = 0; i < 3; i++){
-                    System.out.println(arrayEmployees[i].idAndName());
+                    System.out.println(arrayEmployees[i].idAndName()+ ", salary = " +arrayEmployees[i].getSalary());
                 }
                 break;
 
