@@ -112,7 +112,7 @@ public class Main2 {
 
             case 5:
                 Employyee min = arrayEmployees[0];
-                System.out.println("high salary employee");
+                System.out.println("ranking salary employee");
                 for (int i = 0; i < arrayEmployees.length; i++){
                     for (int j = i+1; j <arrayEmployees.length; j++){
                         if (arrayEmployees[i].getSalary()<arrayEmployees[j].getSalary()){
