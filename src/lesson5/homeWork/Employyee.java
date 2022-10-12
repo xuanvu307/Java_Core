@@ -78,27 +78,19 @@ public class Employyee {
 
     @Override
     public String toString() {
-        return "Employyee{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", birthday='" + birthday + '\'' +
-                ", salary=" + salary +
-                ", gender=" + gender +
-                '}';
+        return "Employyee :  " +
+                "id = " + id +
+                ", FullName = " + name +
+                ", Birth Day = " + birthday +
+                ", Salary = " + salary +
+                "($), Gender : " + gender
+                ;
     }
 
-    Scanner sc = new Scanner(System.in);
-
-    public void add(){
-        System.out.println("input id");
-        id = sc.nextLine();
-        System.out.println("input name");
-        name = sc.nextLine();
-        System.out.println("inut bỉhdat");
-        birthday = sc.nextLine();
-        System.out.println("input salary");
-        salary = sc.nextDouble();
-        System.out.println("input gander");
+    public String idAndName() {
+        return "id = " + id  +
+                ", name = " + name
+              ;
     }
 
     public LocalDate convertDay(){
