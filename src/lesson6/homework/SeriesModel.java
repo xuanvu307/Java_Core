@@ -2,7 +2,7 @@ package lesson6.homework;
 
 import java.util.Scanner;
 
-public class SeriesControl extends FilmControl{
+public class SeriesModel extends FilmModel {
     Scanner sc = new Scanner(System.in);
 
     @Override

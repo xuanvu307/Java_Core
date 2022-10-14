@@ -2,7 +2,7 @@ package lesson6.homework;
 
 import java.util.Scanner;
 
-public class FilmControl {
+public class FilmModel {
     Scanner sc = new Scanner(System.in);
     public Film inputFilm(){
         Film film = new Film();

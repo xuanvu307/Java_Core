@@ -9,8 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        MovieControl movieControl = new MovieControl();
-        SeriesControl seriesControl = new SeriesControl();
+        MovieModel movieControl = new MovieModel();
+        SeriesModel seriesControl = new SeriesModel();
         List<Film> movieFilm = new ArrayList<>();
         List<Film> seriesFilm = new ArrayList<>();
 

@@ -1,12 +1,15 @@
 package lesson71;
 
-public class Follower {
+import java.util.ArrayList;
+
+public class Idol {
     private String name;
     private String id;
     private String email;
-    private int numberOfLike;
+    private String group;
+    private ArrayList<Follower> followers;
 
-    public Follower() {
+    public Idol() {
     }
 
     public String getName() {
@@ -33,21 +36,30 @@ public class Follower {
         this.email = email;
     }
 
-    public int getNumberOfLike() {
-        return numberOfLike;
+    public String getGroup() {
+        return group;
     }
 
-    public void setNumberOfLike(int numberOfLike) {
-        this.numberOfLike = numberOfLike;
+    public void setGroup(String group) {
+        this.group = group;
+    }
+
+    public ArrayList<Follower> getFollowers() {
+        return followers;
+    }
+
+    public void setFollowers(ArrayList<Follower> followers) {
+        this.followers = followers;
     }
 
     @Override
     public String toString() {
-        return "Follower{" +
+        return "Idol{" +
                 "name='" + name + '\'' +
                 ", id='" + id + '\'' +
                 ", email='" + email + '\'' +
-                ", numberOfLike=" + numberOfLike +
+                ", group='" + group + '\'' +
+                ", followers=" + followers +
                 '}';
     }
 }
