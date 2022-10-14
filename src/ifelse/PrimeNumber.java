@@ -1,4 +1,4 @@
-package ifElse;
+package ifelse;
 //Số nguyên tố là số chỉ chia hết cho 1 và chính nó
 import java.util.Scanner;
 

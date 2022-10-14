@@ -1,4 +1,4 @@
-package forLoop;
+package forloop;
 
 public class Fibocacci {
     public static void main(String[] args) {

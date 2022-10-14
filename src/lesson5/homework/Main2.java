@@ -1,4 +1,4 @@
-package lesson5.homeWork;
+package lesson5.homework;
 
 // Bài tập quản lý nhân viên
 

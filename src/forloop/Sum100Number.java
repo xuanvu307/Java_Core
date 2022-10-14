@@ -1,4 +1,4 @@
-package forLoop;
+package forloop;
 
 public class Sum100Number {
     public static void main(String[] args) {

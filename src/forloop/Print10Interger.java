@@ -1,4 +1,4 @@
-package forLoop;
+package forloop;
 
 public class Print10Interger {
     public static void main(String[] args) {

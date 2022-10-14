@@ -1,4 +1,4 @@
-package ifElse;
+package ifelse;
 //Số chính phương là số bình phương của số khác
 import java.util.Scanner;
 
