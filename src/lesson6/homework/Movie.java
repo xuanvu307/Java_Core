@@ -11,11 +11,16 @@ public class Movie extends Film{
         this.duration = duration;
     }
 
-    public Movie(String title, Constant.CATEGORY category, double ranking, int duration) {
-        super(title, category, ranking);
+    public Movie(String id, String title, Constant.CATEGORY category, double ranking, int duration) {
+        super(id, title, category, ranking);
         this.duration = duration;
     }
 
+
+    public Movie(Film film,int duration) {
+        super(film.getId(), film.getTitle(), film.getCategory(), film.getRanking());
+        this.duration = duration;
+    }
     public Movie() {
 
     }

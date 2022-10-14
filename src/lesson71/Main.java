@@ -16,7 +16,8 @@ public class Main {
         FolowerModel folowerModel = new FolowerModel();
         TikTok tikTok = new TikTok();
 
-        //Nhập 2 bài hát:
+        //Nhập 2 bài hát và lưu vào mảng songs
+        //in giá trị kiểm tra
 
         System.out.println("enter song A:");
         Song songA = songModel.inputSong();
@@ -26,31 +27,37 @@ public class Main {
         Song songB = songModel.inputSong();
         songs.add(songB);
 
-        System.out.println(songs.toString());
 
 
-        //nhập 1 follower:
+        //nhập 1 follower M và lưu vào mảng follower
+
         System.out.println("enter folower M: ");
-        Follower folowerModelM = folowerModel.inputFolower();
-        followers.add(folowerModelM);
+        Follower folowerM = folowerModel.inputFolower();
+        followers.add(folowerM);
 
-        System.out.println(followers.toString());
 
-        // Nhập 1 Idol:
+        // Nhập 1 IdolX:
+        // Idol sẽ nhận giá trị mảng follower ở trên
 
         System.out.println("enter Idol X: ");
         Idol idolX = idolModel.inputIdol();
         idolX.setFollowers(followers);
         idols.add(idolX);
 
-        System.out.println(idols.toString());
 
         //lưu vào tiktok
         tikTok.setSongs(songs);
         tikTok.setIdols(idols);
         tikToks.add(tikTok);
 
-        System.out.println(tikToks.toString());
+
+        //in tất cả thông tin vừa nhập:
+
+        System.out.println("Print information:");
+        System.out.println("print songs : \n "+songs.toString()+"\n_______________");
+        System.out.println("print follower : "+followers.toString()+"\n_______________");
+        System.out.println("print idol : " +idols.toString() + "\n_______________");
+        System.out.println("print all from tiktok : "+tikToks.toString());
 
     }
 }

@@ -12,7 +12,7 @@ public class FolowerModel {
         follower.setName(sc.nextLine());
         System.out.println("email: ");
         follower.setEmail(sc.nextLine());
-        System.out.println("like: ");
+        System.out.println("number like: ");
         follower.setNumberOfLike(sc.nextInt());
         return follower;
     }

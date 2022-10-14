@@ -7,13 +7,13 @@ public class IdolModel {
 
     public Idol inputIdol(){
         Idol idol = new Idol();
-        System.out.println("id:");
+        System.out.println("id Idol:");
         idol.setId(sc.nextLine());
-        System.out.println("name: ");
+        System.out.println("name Idol: ");
         idol.setName(sc.nextLine());
-        System.out.println("email: ");
+        System.out.println("email Idol: ");
         idol.setEmail(sc.nextLine());
-        System.out.println("group: ");
+        System.out.println("group Idol: ");
         idol.setGroup(sc.nextLine());
         return idol;
     }

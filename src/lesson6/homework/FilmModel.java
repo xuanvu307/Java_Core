@@ -4,8 +4,12 @@ import java.util.Scanner;
 
 public class FilmModel {
     Scanner sc = new Scanner(System.in);
+
+    Film film = new Film();
+
+
     public Film inputFilm(){
-        Film film = new Film();
+
         System.out.println("enter id film:");
         film.setId(sc.nextLine());
         System.out.println("enter title file: ");

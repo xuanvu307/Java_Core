@@ -9,6 +9,13 @@ public class Film {
     public Film() {
     }
 
+    public Film(String id, String title, Constant.CATEGORY category, double ranking) {
+        this.id = id;
+        this.title = title;
+        this.category = category;
+        this.ranking = ranking;
+    }
+
     public Film(String title, Constant.CATEGORY category, double ranking) {
         this.title = title;
         this.category = category;

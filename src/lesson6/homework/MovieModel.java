@@ -4,13 +4,18 @@ import java.util.Scanner;
 
 public class MovieModel extends FilmModel {
     Scanner sc = new Scanner(System.in);
+    FilmModel filmModel = new FilmModel();
 
-    @Override
-    public Film inputFilm() {
-        Movie movie = new Movie();
+
+    public Movie inputMovie(){
+
+        Film film = filmModel.inputFilm();
         System.out.println("enter duration");
-        movie.setDuration(sc.nextInt());
-        return super.inputFilm();
+        int duration = sc.nextInt();
+        Movie movie = new Movie(film, duration);
+
+        return  movie;
     }
+
 
 }
