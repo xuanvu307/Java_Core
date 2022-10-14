@@ -43,11 +43,10 @@ public class Follower {
 
     @Override
     public String toString() {
-        return "Follower{" +
-                "name='" + name + '\'' +
-                ", id='" + id + '\'' +
-                ", email='" + email + '\'' +
-                ", numberOfLike=" + numberOfLike +
-                '}';
+        return "Follower: " +
+                "name = " + name  +
+                ", id = " + id  +
+                ", email = " + email +
+                ", numberOfLike = " + numberOfLike +" ";
     }
 }

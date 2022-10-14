@@ -54,12 +54,11 @@ public class Idol {
 
     @Override
     public String toString() {
-        return "Idol{" +
-                "name='" + name + '\'' +
-                ", id='" + id + '\'' +
-                ", email='" + email + '\'' +
-                ", group='" + group + '\'' +
-                ", followers=" + followers +
-                '}';
+        return "Idol: " +
+                "nameIdol = " + name  +
+                ", idIdol = " + id  +
+                ", emailIdol = " + email  +
+                ", group = " + group  +
+                ", followers = " + followers + " ";
     }
 }

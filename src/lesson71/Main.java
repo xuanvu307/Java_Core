@@ -21,12 +21,11 @@ public class Main {
         System.out.println("enter song A:");
         Song songA = songModel.inputSong();
         songs.add(songA);
-        System.out.println(songA);
 
         System.out.println("enter song B: ");
         Song songB = songModel.inputSong();
         songs.add(songB);
-        System.out.println(songB);
+
         System.out.println(songs.toString());
 
 
@@ -35,7 +34,6 @@ public class Main {
         Follower folowerModelM = folowerModel.inputFolower();
         followers.add(folowerModelM);
 
-        System.out.println(folowerModelM);
         System.out.println(followers.toString());
 
         // Nhập 1 Idol:
@@ -50,8 +48,9 @@ public class Main {
         //lưu vào tiktok
         tikTok.setSongs(songs);
         tikTok.setIdols(idols);
+        tikToks.add(tikTok);
 
-        System.out.println(tikTok.toString());
+        System.out.println(tikToks.toString());
 
     }
 }
