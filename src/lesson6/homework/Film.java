@@ -61,11 +61,11 @@ public class Film {
 
     @Override
     public String toString() {
-        return "Film : " +
+        return "\nFilm : " +
                 " id = " + id  +
                 ", title = " + title  +
                 ", category = " + category +
-                ", ranking=" + ranking +", ";
+                ", ranking = " + ranking +", ";
     }
 
 

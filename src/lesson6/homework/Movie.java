@@ -37,7 +37,7 @@ public class Movie extends Film{
     public String toString() {
         return
                 super.toString()+
-        "duration = " + duration  ;
+        "duration = " + duration;
     }
 
 }

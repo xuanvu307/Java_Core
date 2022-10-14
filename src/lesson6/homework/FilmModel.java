@@ -15,10 +15,10 @@ public class FilmModel {
         System.out.println("enter title file: ");
         film.setTitle(sc.nextLine());
         System.out.println("enter category: ");
-        System.out.println("1..action");
-        System.out.println("2..comedy");
-        System.out.println("3..horror");
-        System.out.println("4..documentary");
+        System.out.println("1.. Action");
+        System.out.println("2.. Comedy");
+        System.out.println("3.. Horror");
+        System.out.println("4.. Documentary");
         int number = sc.nextInt();
         switch (number) {
             case 1:
