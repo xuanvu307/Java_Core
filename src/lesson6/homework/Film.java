@@ -1,7 +1,7 @@
 package lesson6.homework;
 
 public class Film {
-    private static String id;
+    private String id;
     private String title;
     private Constant.CATEGORY category;
     private double ranking;
@@ -16,12 +16,13 @@ public class Film {
     }
     //-----------begin getter and setter-----------
 
-    public static String getId() {
+
+    public String getId() {
         return id;
     }
 
-    public static void setId(String id) {
-        Film.id = id;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -49,5 +50,16 @@ public class Film {
     }
 
     //___________end setter and getter___________
+
+
+    @Override
+    public String toString() {
+        return "Film : " +
+                " id = " + id  +
+                ", title = " + title  +
+                ", category = " + category +
+                ", ranking=" + ranking +", ";
+    }
+
 
 }

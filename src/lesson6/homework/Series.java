@@ -17,6 +17,10 @@ public class Series extends Film{
         this.averageDuration = averageDuration;
     }
 
+    public Series() {
+
+    }
+
     public int getEpisode() {
         return episode;
     }
