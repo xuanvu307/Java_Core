@@ -201,7 +201,4 @@ public class UserModel {
         return newPassword;
     }
 
-    public void check (){
-        System.out.println(users.toString());
-    }
 }
