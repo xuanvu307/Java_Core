@@ -23,6 +23,8 @@ public class Main {
                     sc.nextLine();
                     userModel.login();
                     break;
+                case 3:
+                    userModel.check();
             }
         }while (chooseNumber !=0);
     }

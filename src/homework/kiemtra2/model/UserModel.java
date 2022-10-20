@@ -18,7 +18,9 @@ public class UserModel {
      * điền thông tin và check regex
      * điền đủ thông tin check email và user trong list
      */
-
+public void check(){
+    System.out.println(users.toString());
+}
     public User register(){
 
         User user = new User();
