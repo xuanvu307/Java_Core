@@ -7,7 +7,7 @@ public class StudentModel {
 
     public Student creatStudent(Scanner sc){
         User user = userModel.creatUser(sc);
-        System.out.println("iOnline: ");
+        System.out.println("iOnline: \n 1. True\n 2. False");
         int chooseOnline = sc.nextInt();
         boolean iOnline;
         switch (chooseOnline){

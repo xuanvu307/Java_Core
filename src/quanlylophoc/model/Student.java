@@ -31,6 +31,8 @@ public class Student extends User{
 
     @Override
     public String toString() {
-        return  super.toString() + String.format("isOnline = %b, background = %s",isOnline,background);
+        return "Student : "+super.toString() +
+                ", isOnline = " + isOnline +
+                ", background = " + background +"\n";
     }
 }

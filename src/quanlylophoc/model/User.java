@@ -3,7 +3,6 @@ package quanlylophoc.model;
 import lesson5.homework.Utils;
 
 import java.time.LocalDate;
-import java.time.chrono.ChronoLocalDate;
 
 public class User {
     private String id;
@@ -77,6 +76,11 @@ public class User {
 
     @Override
     public String toString() {
-        return String.format("id = %s, name = %s, gender = %s, birthday = %td-%tm-%tY, email = %s, phoneNumber = %s,",id,name,gender,birthday,email,phoneNumber);
+        return "id = " + id  +
+                ", name = " + name  +
+                ", gender = " + gender +
+                ", birthday = " + birthday +
+                ", email = " + email +
+                ", phoneNumber = " + phoneNumber ;
     }
 }

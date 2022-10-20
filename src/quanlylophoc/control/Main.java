@@ -5,6 +5,8 @@ import quanlylophoc.model.StudentModel;
 import quanlylophoc.model.User;
 import quanlylophoc.view.HomeView;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -19,5 +21,6 @@ public class Main {
 
         homeView.addUser(users,sc);
         homeView.homePage(sc,users);
+
     }
 }

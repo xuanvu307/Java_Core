@@ -2,10 +2,10 @@ package quanlylophoc.model;
 
 import lesson5.homework.Utils;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -25,22 +25,40 @@ public class UserModel {
                 break;
             case 2:
                 user.setGender(Utils.GENDER.FEMALE);
+                break;
         }
         System.out.println("birthday(dd/MM/yyyy): ");
-        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
-
-        try {
-            sc.nextLine();
-            Date birthday = df.parse(sc.nextLine());
-            df.format(birthday);
-        } catch (ParseException e) {
-        }
+        sc.nextLine();
+        String date = sc.nextLine();
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate birthday = LocalDate.parse(date, df);
+        user.setBirthday(birthday);
 
         System.out.println("email: ");
         user.setEmail(sc.nextLine());
         System.out.println("phone number: ");
         user.setPhoneNumber(sc.nextLine());
         return user;
+    }
+
+    public void search(ArrayList<User> users,Scanner sc){
+        System.out.println("Key search ");
+        String keySearch = sc.nextLine();
+        for (User user: users){
+            if (user.getName().toLowerCase().equals(keySearch.toLowerCase())
+                || user.getEmail().toLowerCase().equals(keySearch.toLowerCase())
+                    || user.getPhoneNumber().toLowerCase().equals(keySearch.toLowerCase())){
+
+                System.out.println(user.toString());
+            }
+        }
+    }
+    public void sortByName(){
+
+    }
+
+    public void sortByAge(){
+
     }
 
 }

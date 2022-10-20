@@ -30,6 +30,8 @@ public class Teacher extends User{
 
     @Override
     public String toString() {
-        return "Teacher: "+super.toString()+ String.format("year of exp = %d, speciality = %s",yearOfExperiences,speciality);
+        return "Teacher : " +super.toString()+
+                "yearOfExperiences = " + yearOfExperiences +
+                ", speciality = " + speciality ;
     }
 }
