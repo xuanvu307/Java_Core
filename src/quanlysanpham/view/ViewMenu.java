@@ -5,6 +5,9 @@ import quanlysanpham.model.Product;
 import java.util.ArrayList;
 
 public class ViewMenu {
+
+    //trang chủ
+
     public void homePage(){
         System.out.println("-----> MENU ");
         System.out.println("1. Add product");
@@ -16,10 +19,13 @@ public class ViewMenu {
         System.out.println("0. Exit");
     }
 
+    // in tất cả sản phẩm
     public void viewProduct(ArrayList<Product> products){
         System.out.println(products.toString());
     }
 
+
+    //menu tìm kiếm theo giá
     public void viewMenuPrice(){
         System.out.println("1. Search price < 50.000");
         System.out.println("2. Search 50.000 <= price < 100.000");
