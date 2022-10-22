@@ -11,9 +11,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         ClassModel classModel = new ClassModel();
 
-
-
-
         School school = new School();
 
         System.out.println(school.toString());

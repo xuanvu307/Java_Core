@@ -6,6 +6,8 @@ import lesson5.homework.Utils;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 
@@ -53,8 +55,8 @@ public class UserModel {
             }
         }
     }
-    public void sortByName(){
-
+    public void sortByName(ArrayList<User> users){
+        Collections.sort(users, Comparator.comparing(User::getName));
     }
 
     public void sortByAge(){
