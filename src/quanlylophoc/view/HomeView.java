@@ -21,9 +21,10 @@ public class HomeView {
         for (int i = 0; i < 2 ;i++){
             System.out.println("input teacher " +(i+1));
             User teacher = teacherModel.creatTeacher(sc);
+            users.add(teacher);
         }
 
-        for (int i = 0; i < 6 ;i++){
+        for (int i = 0; i < 2 ;i++){
             System.out.println("Input student " +(i+1));
             User student = studentModel.creatStudent(sc);
             users.add(student);
@@ -34,12 +35,12 @@ public class HomeView {
         System.out.println("*****************************");
         System.out.println("*       choose number       *");
         System.out.println("*                           *");
-        System.out.println("*           1. print        *");
-        System.out.println("*  2.search email or phone  *");
-        System.out.println("*       3 sort by name      *");
-        System.out.println("*       4 sort re- age      *");
+        System.out.println("*          1. Print         *");
+        System.out.println("*  2.Search email or phone  *");
+        System.out.println("*      3. Sort by name      *");
+        System.out.println("*      4. Sort re- age      *");
         System.out.println("*****************************");
-        int chooseNumber = sc.nextInt();
+        int chooseNumber = Integer.parseInt(sc.nextLine());
         switch (chooseNumber){
             case 1:
                 System.out.println(users.toString());
@@ -49,9 +50,16 @@ public class HomeView {
                 break;
             case 3:
                 userModel.sortByName(users);
+                for (User user: users){
+                    System.out.println(user);
+                }
                 break;
             case 4:
-                userModel.sortByAge();
+                userModel.sortByAge(users);
+                for (User user: users){
+                    System.out.println(user);
+                }
+                break;
         }
     }
 

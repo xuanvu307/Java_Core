@@ -59,27 +59,36 @@ public class UserModel {
                 System.out.println(user.toString());
             }
         }
-<<<<<<< HEAD
-
         if (check == 0){
             System.out.println("no result");
         }
-=======
-    }
-    public void sortByName(ArrayList<User> users){
-        Collections.sort(users, Comparator.comparing(User::getName));
->>>>>>> 99ba1fae34f304a49255bf5ab053cd7eb095690e
     }
 
     // sắp xếp theo tên
 
     public void sortByName(ArrayList<User> users){
-        users.sort();
+        Collections.sort(users, new Comparator<User>() {
+            @Override
+            public int compare(User u1, User u2) {
+                return u1.getName().compareTo(u2.getName());
+            }
+        });
     }
 
     // sắp xếp theo tuổi giảm dần
-    public void sortByAge(){
-
+    public void sortByAge(ArrayList<User> users){
+        Collections.sort(users, new Comparator<User>() {
+            @Override
+            public int compare(User u1, User u2) {
+                if (u1.getBirthday().getYear() > u2.getBirthday().getYear()){
+                    return 1;
+                } else if (u1.getBirthday().getYear() == u2.getBirthday().getYear()){
+                    return 0;
+                } else {
+                    return -1;
+                }
+            }
+        });
     }
 
 }

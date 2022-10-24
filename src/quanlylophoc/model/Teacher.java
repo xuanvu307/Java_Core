@@ -32,6 +32,6 @@ public class Teacher extends User{
     public String toString() {
         return "Teacher : " +super.toString()+
                 "yearOfExperiences = " + yearOfExperiences +
-                ", speciality = " + speciality ;
+                ", speciality = " + speciality +"\n";
     }
 }
