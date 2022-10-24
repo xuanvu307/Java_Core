@@ -6,6 +6,8 @@ import lesson5.homework.Utils;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 
@@ -41,7 +43,11 @@ public class UserModel {
         return user;
     }
 
+
+    // Tìm kiếm theo keyword bất kỳ nếu xuất hiện trong tên hoặc email hoặc số điện thoại thì in ra thông tin người đó
+
     public void search(ArrayList<User> users,Scanner sc){
+        int check = 0;
         System.out.println("Key search ");
         String keySearch = sc.nextLine();
         for (User user: users){
@@ -49,14 +55,23 @@ public class UserModel {
                 || user.getEmail().toLowerCase().equals(keySearch.toLowerCase())
                     || user.getPhoneNumber().toLowerCase().equals(keySearch.toLowerCase())){
 
+                check++;
                 System.out.println(user.toString());
             }
         }
-    }
-    public void sortByName(){
 
+        if (check == 0){
+            System.out.println("no result");
+        }
     }
 
+    // sắp xếp theo tên
+
+    public void sortByName(ArrayList<User> users){
+        users.sort();
+    }
+
+    // sắp xếp theo tuổi giảm dần
     public void sortByAge(){
 
     }
