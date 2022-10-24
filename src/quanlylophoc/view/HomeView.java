@@ -24,7 +24,7 @@ public class HomeView {
             users.add(teacher);
         }
 
-        for (int i = 0; i < 2 ;i++){
+        for (int i = 0; i < 6 ;i++){
             System.out.println("Input student " +(i+1));
             User student = studentModel.creatStudent(sc);
             users.add(student);
