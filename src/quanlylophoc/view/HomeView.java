@@ -48,7 +48,7 @@ public class HomeView {
                 userModel.search(users,sc);
                 break;
             case 3:
-                userModel.sortByName();
+                userModel.sortByName(users);
                 break;
             case 4:
                 userModel.sortByAge();

@@ -59,10 +59,16 @@ public class UserModel {
                 System.out.println(user.toString());
             }
         }
+<<<<<<< HEAD
 
         if (check == 0){
             System.out.println("no result");
         }
+=======
+    }
+    public void sortByName(ArrayList<User> users){
+        Collections.sort(users, Comparator.comparing(User::getName));
+>>>>>>> 99ba1fae34f304a49255bf5ab053cd7eb095690e
     }
 
     // sắp xếp theo tên
